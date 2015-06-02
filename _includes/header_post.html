@@ -1,0 +1,16 @@
+<div class="header">
+  <div class="container">
+    <div class="logo"> <a href="{{ blog_baseurl }}/"><img src="{{ blog_baseurl }}/images/logo.png" alt="システム屋まそお"></a> </div>
+    <div class="menu"> <a class="toggleMenu" href="#"><img src="{{ blog_baseurl }}/images/nav_icon.png" alt="" /> </a>
+      <ul class="nav" id="nav">
+        <li{% if page.title %}{% else %} class="current"{% endif %}><a href="{{ blog_baseurl }}/">Home</a></li>
+        <li{% if page.url contains "/about/" %} class="current"{% endif %}><a href="{{ blog_baseurl }}/about/">About</a></li>
+        <li{% if page.url contains "/blog/" %} class="current"{% endif %}><a href="{{ blog_baseurl }}/blog/">Blog</a></li>
+        <li><a href="http://goo.gl/forms/iU1bFbCSXt">Contact</a></li>
+        <div class="clear"></div>
+      </ul>
+      <script type="text/javascript" src="{{ blog_baseurl }}/js/responsive-nav.js"></script> 
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+</div>

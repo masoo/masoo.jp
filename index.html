@@ -1,23 +1,47 @@
 ---
-layout: default
+layout: top
+lang: ja
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="banner text-center">
+  <div class="container">
+    <div class="banner-info">
+      <h1>北近畿・舞鶴市でシステム開発・ホームページ作成をするのならご相談ください。</h1>
+      <p>ホームページ、会社のシステム回り全般の開発、Webサービスの開発・保守<br>
+        　情報セキュリティのご相談等　うけたまわります。</p>
+      <label class="page-scroll"><a class="banner-btn class scroll" href="#feature"><i class="fa fa-angle-double-down fa-4x"></i></a></label>
+    </div>
+  </div>
+</div>
+<div class="main">
+<div class="content_white">
+  <h2>システム屋まそおのFUNABARAです。</h2>
+  <p>個人事業主として以下のような活動を行っています。<br><br>ご相談がありましたら、ぜひお問い合わせください。</p>
+</div>
+<div class="featured_content" id="feature">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3 feature_grid1"> <i class="fa fa-home fa-3x"></i>
+        <h3 class="m_1"><a href="#">Webシステム開発</a></h3>
+        <p class="m_2">Web系のシステム開発では、顧客管理システム、ショップカートシステムの他、社内も含めた情報システムの幅広いサポートを行います。</p>
+      </div>
+      <div class="col-md-3 feature_grid1"> <i class="fa fa-building fa-3x"></i>
+        <h3 class="m_1"><a href="#">社内システム開発</a></h3>
+        <p class="m_2">社内の営業支援システム・顧客管理システム、POSシステムの他、Webシステムと連携した総合的なシステムのサポートを行います。</p>
+      </div>
+      <div class="col-md-3 feature_grid1"> <i class="fa fa-users fa-3x"></i>
+        <h3 class="m_1"><a href="#">講習・講演</a></h3>
+        <p class="m_2">プログラミング言語講座・情報セキュリティ対策講座等の講習・講演を受けたまわります。</p>
+      </div>
+      <div class="col-md-3 feature_grid2"> <i class="fa fa-book fa-3x"></i>
+        <h3 class="m_1"><a href="#">電子書籍作成</a></h3>
+        <p class="m_2">電子書籍の作成のサポートの他、電子書籍作成サービスをご提供します。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="content_white">
+    <h2>お問い合わせ</h2>
+    <p><a href="http://goo.gl/forms/iU1bFbCSXt">お問い合わせフォーム</a>をご用意しているのでご利用ください。</p>
+  </div>
 </div>

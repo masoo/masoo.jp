@@ -1,0 +1,65 @@
+---
+layout: blog_index
+lang: ja
+title: Blog
+---
+
+<div class="about">
+  <div class="container">
+    <section class="title-section">
+      <h1 class="title-header"> Blog </h1>
+    </section>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+
+      {% for post in paginator.posts %}
+      <div class="blog_grid">
+        <h2 class="post_title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <ul class="links">
+          <li><i class="fa fa-calendar"></i>{{ post.date | date: '%Y年%m月%d日' }}</li>
+          <li><i class="fa fa-user"></i> <a href="#">{{ post.author }}</a></li>
+        </ul>
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ post.url }}" class="blog_btn">Read more</a>
+      </div>
+      {% endfor %}
+
+      <div class="pagination pagination__posts">
+        <ul>
+          {% if paginator.previous_page %}
+          <li class="next"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' | replace: '/index.html', '/' }}">新しい記事</a></li>
+          {% endif %}
+          {% assign startpage = paginator.page | minus: 3 %}
+          {% assign endpage = paginator.page | plus: 3 %}
+          {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+              <li class="active"><a href="#">{{ page }}</a></li>
+            {% elsif startpage < page and page < endpage %}
+              <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+            {% endif %}
+          {% endfor %}
+          {% if paginator.next_page  %}
+          <li class="next"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">古い記事</a></li>
+          {% endif %}
+        </ul>
+      </div>
+
+    </div>
+    <div class="col-md-4 blog_sidebar">
+      <ul class="sidebar">
+        <h3>Categories</h3>
+        <li>なし</li>
+      </ul>
+      <ul class="sidebar">
+        <h3>Recent posts</h3>
+        {% for post in site.posts limit:5 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
