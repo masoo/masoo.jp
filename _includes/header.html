@@ -1,7 +1,7 @@
 <div class="header">
   <div class="container">
     <div class="logo"> <a href="{{ masoo_baseurl }}"><img src="{{ masoo_baseurl }}images/logo.png" alt="システム屋まそお"></a> </div>
-    <div class="menu"> <a class="toggleMenu" href="#"><img src="../images/nav_icon.png" alt="" /> </a>
+    <div class="menu"> <a class="toggleMenu" href="#"><img src="{{ masoo_baseurl }}images/nav_icon.png" alt="" /> </a>
       <ul class="nav" id="nav">
         <li{% if page.title %}{% else %} class="current"{% endif %}><a href="{{ masoo_baseurl }}">Home</a></li>
         <li{% if page.url contains "/about/" %} class="current"{% endif %}><a href="{{ masoo_baseurl }}about/">About</a></li>
