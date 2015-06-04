@@ -4,6 +4,12 @@ lang: ja
 title: Blog
 ---
 
+{% if paginator.page == 1 %}
+{% assign blog_baseurl = ".." %}
+{% else %}
+{% assign blog_baseurl = "../.." %}
+{% endif %}
+{% include head.html %}
 <div class="about">
   <div class="container">
     <section class="title-section">
@@ -17,13 +23,13 @@ title: Blog
 
       {% for post in paginator.posts %}
       <div class="blog_grid">
-        <h2 class="post_title"><a href="{{ masoo_baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <h2 class="post_title"><a href="{{ blog_baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
         <ul class="links">
           <li><i class="fa fa-calendar"></i>{{ post.date | date: '%Y年%m月%d日' }}</li>
           <li><i class="fa fa-user"></i> <a href="#">{{ post.author }}</a></li>
         </ul>
         <p>{{ post.excerpt }}</p>
-        <a href="{{ masoo_baseurl }}{{ post.url }}" class="blog_btn">Read more</a>
+        <a href="{{ blog_baseurl }}{{ post.url }}" class="blog_btn">Read more</a>
       </div>
       {% endfor %}
 
