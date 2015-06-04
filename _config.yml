@@ -1,11 +1,9 @@
 # Site settings
 title: システム屋まそお
 email: 
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for  Google search results) and in your feed.xml site description."
+description: "京都府舞鶴市でシステム開発を行うシステム屋まそおのWebサイト"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://www.masoo.jp" # the base hostname & protocol for your site
 
 # Build settings
 markdown: "kramdown"
