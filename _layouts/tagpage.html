@@ -1,17 +1,16 @@
----
-layout: blog_index
-lang: ja
-title: Blog
----
-{% if paginator.page == 1 %}
-{% assign masoo_baseurl = ".." %}
-{% else %}
-{% assign masoo_baseurl = "../.." %}
-{% endif %}
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+{% assign masoo_baseurl = "../../../../" %}
+{% include head.html %}
+</head>
+<body>
+  {% include header.html %}
+
 <div class="about">
   <div class="container">
     <section class="title-section">
-      <h1 class="title-header"> Blog </h1>
+      <h1 class="title-header"> Blog - {{ page.tag }} </h1>
     </section>
   </div>
 </div>
@@ -19,22 +18,22 @@ title: Blog
   <div class="row">
     <div class="col-md-8">
 
-      {% for post in paginator.posts %}
+      {% for post in site.tags[page.tag] %}
       <div class="blog_grid">
-        <h2 class="post_title"><a href="{{ masoo_baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <h2 class="post_title"><a href="{{ blog_baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
         <ul class="links">
           <li><i class="fa fa-calendar"></i>{{ post.date | date: '%Y年%m月%d日' }}</li>
           <li><i class="fa fa-user"></i> <a href="#">{{ post.author }}</a></li>
           {% if post.tags.size > 0 %}
           <li><i class="fa fa-tags"></i> 
             {% for post_tag in post.tags %}
-            <a href="{{ masoo_baseurl }}/blog/tags/{{ post_tag }}/">{{ post_tag }}</a>, 
+            <a href="{{ masoo_baseurl }}blog/tags/{{ post_tag }}/">{{ post_tag }}</a>, 
             {% endfor %}
           </li>
           {% endif %}
         </ul>
         <p>{{ post.excerpt }}</p>
-        <a href="{{ masoo_baseurl }}{{ post.url }}" class="blog_btn">Read more</a>
+        <a href="{{ blog_baseurl }}{{ post.url }}" class="blog_btn">Read more</a>
       </div>
       {% endfor %}
 
@@ -62,9 +61,9 @@ title: Blog
     <div class="col-md-4 blog_sidebar">
       <ul class="sidebar">
       {% if paginator.page == 1 %}
-      {% assign masoo_baseurl = "../" %}
-      {% else %}
       {% assign masoo_baseurl = "../../" %}
+      {% else %}
+      {% assign masoo_baseurl = "../../../" %}
       {% endif %}
       {% include sidebar_categories.html %}
       </ul>
@@ -77,4 +76,9 @@ title: Blog
     </div>
   </div>
 </div>
+
+  {% include footer.html %}
+  {% include google_analytics.html %}
+</body>
+</html>
 

@@ -1,0 +1,10 @@
+<h3>Categories</h3>
+{% if site.tags.size > 0 %}
+  <li>
+  {% for site_tag in site.tags %}
+  <a href="{{ masoo_baseurl }}blog/tags/{{ site_tag[0] }}/">{{ site_tag[0] }}</a>, 
+  {% endfor %}
+  </li>
+{% else %}
+<li>なし</li>
+{% endif %}

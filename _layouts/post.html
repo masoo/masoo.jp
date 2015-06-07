@@ -23,6 +23,13 @@
         <ul class="links">
           <li><i class="fa fa-calendar"></i>{{ page.date | date: '%Y年%m月%d日' }}</li>
           <li><i class="fa fa-user"></i> <a href="#">{{ page.author }}</a></li>
+          {% if page.tags.size > 0 %}
+          <li><i class="fa fa-tags"></i> 
+            {% for post_tag in page.tags %}
+            <a href="{{ masoo_baseurl }}blog/tags/{{ post_tag }}/">{{ post_tag }}</a>, 
+            {% endfor %}
+          </li>
+          {% endif %}
         </ul>
         {{ content }}
       </div>
@@ -30,8 +37,7 @@
     </div>
     <div class="col-md-4 blog_sidebar">
       <ul class="sidebar">
-        <h3>Categories</h3>
-        <li>なし</li>
+      {% include sidebar_categories.html %}
       </ul>
       <ul class="sidebar">
         <h3>Recent posts</h3>
