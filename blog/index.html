@@ -41,7 +41,7 @@ title: Blog
       <div class="pagination pagination__posts">
         <ul>
           {% if paginator.previous_page %}
-          <li class="next"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' | replace: '/index.html', '/' }}">新しい記事</a></li>
+          <li class="next"><a href="{{ paginator.previous_page_path  | prepend: site.baseurl | replace: '//', '/' | replace: '/index.html', '/' }}">新しい記事</a></li>
           {% endif %}
           {% assign startpage = paginator.page | minus: 3 %}
           {% assign endpage = paginator.page | plus: 3 %}
@@ -49,7 +49,11 @@ title: Blog
             {% if page == paginator.page %}
               <li class="active"><a href="#">{{ page }}</a></li>
             {% elsif startpage < page and page < endpage %}
+              {% if page == 1 %}
+              <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '/:num/', '/' | replace: '//', '/' }}">{{ page }}</a></li>
+              {% else %}
               <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+              {% endif %}
             {% endif %}
           {% endfor %}
           {% if paginator.next_page  %}
