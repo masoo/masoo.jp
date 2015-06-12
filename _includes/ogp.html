@@ -10,3 +10,5 @@
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 <meta property="og:locale" content="ja_JP" />
 <meta property="og:image" content="{{ page.thumbnail }}" />
+<meta name="twitter:card" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:site" content="@masoojp">
