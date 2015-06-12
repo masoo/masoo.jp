@@ -5,6 +5,7 @@ date:   2015-06-04 00:00
 author: "FUNABARA Masao"
 lang: "ja"
 categories: blog
+tags: report
 ---
 
 こんにちは。システム屋まそおの舩原です。
