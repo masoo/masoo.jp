@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ubuntu Server 15.10 インストールログ"
-date:   2015-10-26 22:00
+date:   2015-10-27 16:00
 author: "FUNABARA Masao"
 lang: "ja"
 categories: blog
