@@ -16,3 +16,4 @@ exclude: ["_sources", "README.md"]
 # sitemap.xml
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
