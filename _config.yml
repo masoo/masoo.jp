@@ -1,9 +1,11 @@
 # Site settings
-title: システム屋まそお
+title: "システム屋まそお | システム開発・スマートフォン/iPhoneアプリ開発・ Webサイト構築"
 email: 
 description: "京都府舞鶴市でシステム開発を行うシステム屋まそおのWebサイト"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.masoo.jp" # the base hostname & protocol for your site
+
+production: true
 
 # Build settings
 markdown: "kramdown"
