@@ -9,4 +9,5 @@
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif post.excerpt %}{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.title %}{{ page.title }} | {{ site.description }}{% elsif post.title %}{{ post.title }} | {{ site.description }}{% else %}{{ site.description }}{% endif %}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+{% if page.amp %}<link rel="amphtml" href="{{ page.amp_url }}" />{% endif %}
 {% include ogp.html %}
