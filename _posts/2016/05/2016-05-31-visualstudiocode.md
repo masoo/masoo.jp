@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "Visual Studio Code で Ruby ERB の表示の機能拡張を追加してみる"
+date:   2016-05-31 13:00
+author: "FUNABARA Masao"
+lang: "ja"
+categories: blog
+tags: ruby rails
+---
+
+皆さんエディタ何使ってますか？
+
+僕は最近、
+Visual Studio Code
+を使ってます。
+（自作のエディタはお休みしてもらってます。）
+
+最近のエディタらしく、Visual Studio Code も拡張機能を使って拡張できるんですね。
+<br><br>
+
+----
+
+### Rails ERB の表示を拡張
+
+様々な言語の表示をサポートしている Visual Studio Code ですが、  
+Ruby ERB はサポートされていませんでした。  
+（Ruby はサポートされてる）
+
+しかし、拡張機能で Ruby ERB をサポートする機能拡張が公開されているので、
+これを導入すれば Rails の開発も少しはかどる気がします。
+
+
+1. 左下の四角いボタンをクリックします。  
+   クリックすると、画面上に「拡張機能」という小窓が表示されます。  
+   ![extensions01](https://lh3.googleusercontent.com/NADZk_cIMNt2EriS2mrtDzRwAdhhFVCJs-Qbvz2dauUILbeSnvnbdTIjUtEOWh2QFGiWXGT4OwLINbMI4DkRAG4gHUAg6cwfVucyMQaZe5HQxpnOs_u6kKY76MrgOzGr2CzrtytuBDoiGv47X5ASnCRISWON64ixwjPfTSiGonuhVTRXeC_h8yXk1EWO6jhTwzGuNx_dvp83Fdl2imsml_dbDRzggs_own6IR-N2ydL_UXUzfC6XIsZy-6mJceH-oZ8sE3qmgy-v5G47LdIp8_j4GiOOZ09CnRKcxTnIuxXbsLSwI7IQ0sWTWOySrbxSqowvceVbrfjIfF388JcfO3CAtMjx5FYSsqFk7BdJWjnWNDvu7E5b2UqoCaHf1Hf44pFk3jEbJ0clKpjF5RJ_3Qgd_bpxz7BJIhgv300paiAaK02z7ELuioKjtX87hx_SYZubUOZQQRV56S7AwXBvPkK29ICas82D1V5lOTIVyaMSxc4Ndv4aVD7IZlPdqd02gcec303F07iE5bQ92RERTEzta7cLP8XUTc7x5EgR1ECqRHdWTJx8Jbz4UVvigSX1Q_PcET9WHTgbQDNjKtDSYj8Y7JzpTgc=w600-h450-no){: .img-responsive}  
+   
+2. 画面上に「拡張機能」という小窓が表示されたら、その下のプルダウンの「拡張機能:拡張機能のインストール」をクリックします。 
+   クリックすると、小窓に「ext install」と入力されます。  
+   ![extensions02](https://lh3.googleusercontent.com/mwoWrkuSev9XMFZujII0ohBnNLa9W_JTSy9QNUmRedhfeFgEuHMnV8uipa2sFerMCWudatprZZ2y20EvMhskd5h8-aCSe3eEJRunb7rd4U44OH6qQDIvwV2jYVA8roGkjqt5xJzues8DeyEjTlvjZPCz8nOuoNBfOFq3XSFC5uURXJUZJpFlgH4MO3gDSkIH5iGgYaHvkbb0GW22aXLY1BxpAPvwmZarSpanouZTDaZb1nUCIUBHiAlEYdIo7oNv3mOhIGrOKA0zdAVytjECUkqcyjf1Z1dNuDhQ6-OxUOJhKGbI4vUzvS5tstlXlRp3Z86Sw9i1GjbNCioE5M9L6pneVn7h11wAsxVpUrqlHyFItbBj1ftm5cVdvrgPmgkI1NMMCoGk0dhTp4ZA3ihiRVk-GAo-oaiNrXulXad31C3LoXAk7srcRkTeOwta94c-w4hyvv5HbqSyAZVDuHTZcR4Avo8MJ-ov6YTQh3LJmG4mvj3AzJ3s1_1IOjs6QwfBSNkpnHpR9LC6Gu0c3N27MAfwG_C3XON5dxPlUBz_byttIqIGAoLGwtXlMHxq6e69yOD_oJLyizwbKPX_AfDUM9isgDfmxmY=w600-h450-no){: .img-responsive}  
+3. 小窓に「ext install」と入力されたら、つづいて ```erb``` と入力し、エンターキーを押下します。  
+   押下すると、インストールされ、エディタの再起動を求められるので再起動すると完了です。  
+   ![extensions03](https://lh3.googleusercontent.com/CbN4vP4gyWx0sFFSCGMMJByqlLqXEUoNJ6YJE_OFGvGxnkLdSrOQaGmDgFt7D8SROeWTokgGArRXNTdhdhDX8gdCExkVtURkMQvI5mi2DrBLQyO852ocx-J_-nH-nkOe_syoCBDoMxUsUwmu9D-mQoqtszn4dvpGJ5b_9aoVdkMqxCSXHcbHoj_43yodiALfpCflCds7KRdHQfo7QBtmVM4jqcZANuu-YpKrhCbCrv8lv2WE7KMfGqGLqFeDtjB372pnUu1Elx7YtPPhIR0FVntWEmRpxAOzJfRqZs7_dpSGVUibKGPnkojJDat-p_o_-GGhrfnWSJgszlvo9JwjBapCZtpjuzhOqWZ_dmyHf11z3XddGQ-k-rGh8NWlnR77u1-J7_7grvQLxHWXqW6TR2kSq1memyTsNXF_b0IHecvDlazR1APqpeeVDKv-P8-s4a_TiZKug_dh9vd0f3F3jOg531oUtqof6nTpUY9AyLOB8BZ61PNxqSUxRD9Pb7b5JqH1edLag3Ksc-oF0uEEUnZaG66eYbSv2Yml1VPG-jMoAm1LDOv_g1iwYnsVR2MjksLV4yifo18tq5gIwt6lS8AqDdEgJGU=w600-h450-no){: .img-responsive}  
+
+<br><br>
+
+----
+
+### Visual Studio Code の Ruby ERB の見た目
+
+見た目はこんな感じ。
+タグで折りたためるけど、ちゃんとタグを解析しているわけでなく、段落をみている感じがする。  
+まあ、エディタとしては、ちゃんと解析すると開発の意味がないのでいい気はします。
+
+![extensions04](https://lh3.googleusercontent.com/SLHLQa2xm0YXcmc0aQLlCUBE8D1ExT7zbeW4tERDN-_CaJLMUTvksWd2EGRDU206V8kd2tZkoW2sD-hD1RXMuwwcxnx7BVjgQctIcMYMhU_wUkYAZGWFr6UEeACZ7uokqWQgATCpLwuejnNOUXwbFSyoOxxv79Iajbbq4fBmooAKiArbAxgMz8F629pvC6-tW2s6XiidKR-56hSydLjbqkhXN-ABZuV9SijGX1cq8qmaNd1wIXLo6Z48hH2Wv8NRAht4qSzFSfLnGDLkhxOP5tELDpQHFIinXfiQt9UEzC6Txgr0I5ImX99TxdL7AEJUfJmNFN-a0AOlgwh1_vX335N75KQCBo2soj3Tn3qe2OzFLGKbMPc1X0IMebm6RMy71cuZXPkKFxbmL3HOI6nB1WqD28JqvFhmXBEIkWXbgSC3bb80sMcJgGflMOn-wLkrmJS8up0cCO4Oy0VaXruYOuU1NSmbZbNk79pfrrD5KzaZ4-q18Y95evnNmJ_BLjfwpEI_1IVvwUm4EbBYDMujeUkmoKf6y1KVbzfrcAW53-UFXmn6EPCSOMS_e7wTiQc-KTViCAQa5hKkfVBv7wdd-aJJYPKWT64=w600-h450-no){: .img-responsive}  
+
