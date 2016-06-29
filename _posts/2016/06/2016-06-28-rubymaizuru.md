@@ -5,7 +5,7 @@ date:   2016-06-28 15:00
 author: "FUNABARA Masao"
 lang: "ja"
 categories: blog
-tags: diary
+tags: report ruby rails
 ---
 
 6/26(日) に [Ruby舞鶴 勉強会 #6](https://ruby-maizuru.doorkeeper.jp/events/46371) を開催しました。
