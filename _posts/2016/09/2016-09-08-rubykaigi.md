@@ -14,7 +14,7 @@ Youtube に RubyKaigi の一日目の様子をアップロードしました。
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qUpfHgU8UaY" frameborder="0" allowfullscreen></iframe>
 </div>
 
-https://youtu.be/qUpfHgU8UaY
+[https://youtu.be/qUpfHgU8UaY](https://youtu.be/qUpfHgU8UaY)
 
 私が見たのは以下の通り
 
