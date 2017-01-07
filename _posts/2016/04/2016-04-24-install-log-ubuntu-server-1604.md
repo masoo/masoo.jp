@@ -12,6 +12,13 @@ Ubuntu Server 16.04 をインストールした場合の備忘録です。
 若干のオプションの追加はありましたが、
 インストール方法で Ubuntu Server 15.10 から変更はありません。
 
+最新版のインストール記事をご覧になりたい方は、  
+Qiita 上の 「[Ubuntu Server インストールログ](http://qiita.com/masoo/items/307f49d0606cabb90f93)」
+という記事でリンクをまとめています。  
+また、次のバージョンのインストールログは 「[Ubuntu Server 16.10 インストールログ](/blog/2016/10/20/install-log-ubuntu-server-1610.html)」
+にて、  
+当ブログに掲載しています。
+
 <br><br>
 
 1. ディスクを入れて起動します。  
