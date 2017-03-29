@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
-<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif post.excerpt %}{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.title %}{{ page.title }} | {{ site.description }}{% elsif post.title %}{{ post.title }} | {{ site.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="description" content="{% if page.content %}{{ page.content | newline_to_br | strip_html | strip_newlines | truncate: 160, "" | escape }}{% elsif post.content %}{{ post.content | newline_to_br | strip_html | strip_newlines | truncate: 160, "" | escape }}{% elsif page.title %}{{ page.title }} | {{ site.description }}{% elsif post.title %}{{ post.title }} | {{ site.description }}{% else %}{{ site.description }}{% endif %}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 {% include ogp.html %}
