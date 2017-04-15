@@ -1,0 +1,165 @@
+---
+layout: post
+title:  "Ubuntu Server 17.04 インストールログ"
+date:   2017-04-15 13:00
+author: "FUNABARA Masao"
+lang: "ja"
+categories: blog
+tags: report ubuntu
+---
+
+Ubuntu Server 16.10 をインストールした場合の備忘録です。  
+インストール方法で Ubuntu Server 16.04 から変更はありません。
+
+最新版のインストール記事をご覧になりたい方は、  
+Qiita 上の 「[Ubuntu Server インストールログ](http://qiita.com/masoo/items/307f49d0606cabb90f93)」
+という記事でリンクをまとめています。  
+
+<br><br>
+
+1. ディスクを入れて起動します。  
+   以下のようなインストーラーの表示言語選択画面になるので、  
+   「日本語」を選択し、Enterキーを押下します。  
+   押下するとインストール方法の選択画面に移動します。  
+   ![ubuntu_01](https://lh3.googleusercontent.com/1BKYMmu1ewB5vLvf4V5rUv0pLithDjfL-IN2Nx6o9I3Mb-ctPK7sEhuFyPsbPhYlpsaK81pcQP6k5BsFM6qWAWDEGD6PQYRcyfBspxfYhf5TRkN19np6HXhDQYaYswot67myfQFwkqim0J-13zCS43opTtxlQFRYbNNJAXeVdDw4pv5xaQ-A0u-z-rn43Ox0B32JHZFldAFYdXe_T4Df-UwTuiP2yZLAiNXIIgJck2E7LxgaKK8tOwuR8w7PwhohJNMvIwgmKTUcaMW7XB49INVqStSIlOx8ImtQcQe-MaVfpkGucYOswnmLgizuWd0CZpbi0ToBGEQ8ZcjjGdLt3_IT7davRQj-7ZZKy4noixtDDtN0TDx1oDClTN_DFuY90R4xYf6ro-zISXy91pYU1h07zXe23L1lEgOmss1C78j7PEGvzsLIP_t8Khaam4IX0uC9u-KemAk2bQJuo9Nc97uRojPxkk1uy_dmuLC9ywRwOrmne0c1WXP_PQiNc-64rIuDhqfx4iWgXME2up-gWz1-nCVNMrMaa9bh1c0OjXrvxfIXxWiDWOKbbj7Ln5t6NdIlktJZ90V5wHfksq-GkNMxELOdwWMFkHTuiebTHVFsRQX21ut-geUPca0fFc5H0pP9AMOyFDEgE0mZ14jbyXcWpEmqK4Xjued3d4a-dg=w400-h300-no){: .img-responsive}  
+   
+1. インストール方法の選択画面に移動したら、  
+   以下のような「Ubuntu Server をインストール(I)」を選択し、Enterキーを押下します。  
+   押下すると「Select a language」の画面に移動します。  
+   ![ubuntu_02](https://lh3.googleusercontent.com/HCz4IbPMCokwPoQrDM4-ChtqH2xm9s7A8ixYOm8J7J70LvHtawhk132XZKINXUXrXiOefahcKC52d0Ib-36XEP81LzD-amv0dS636AJPQtHwqVCNGJQdyhEGBjFD8OSiaHlpuT1h0vuj6GIIDZstv7TtDyNvHcdLTYmJXChVEsM0egDqS_D7PKrJYiEpFqvjCw6srSwIZA-DUmZmGyzQwcHaw1Fi7Bso_-8txiVxIhZFHED9sI19KqvgWtDFSVZBXfWcfGRoU8iguqBLdv8cBL2ps1HdxBd0vdydYrzLgEFMItIMagFKYMPXY85kgvKOah2BH-BYQdzDMTj9NNouU-OTl2KeLxyyZD0Dj9OZShsjLIdGUeEmarLy7IbYff4BZbaVBfc1AxXiMdwk0eSLbNWZUTTc_BSyCm-Q-MCbSy2dTdmr93qeoFy6Lgj_BeZbqYwpcnI90-Kh8J4yA8J6DKbq-naj9miSp_tiRuJHANdVVTySXHFxLylUTK5cjlMkvi0uEdlZR1nVuAoq8Wq29TEX2qe7qU8uld1gxzg9gkU2MTnbc6j_7RPwWaJa2MBv7P8zNv5vlBx0bEtgq2wXvixR5inmMlNj0yoovwZDD6IQRS2O=w400-h300-no){: .img-responsive}  
+   
+1. 「Select a language」の画面に移動したら、  
+   「はい」を選択し、Enterキーを押下します。  
+   押下すると「場所の選択」の画面に移動します。  
+   ![ubuntu_03](https://lh3.googleusercontent.com/KYRL2lbrWAzjJsQmixPZ2Q5DrrcZ9yw0e0tFgbBS91j8Ui0HEciWU0VJ-Q0YDRZNqUi8goD7-Twnh60KTX9rfp8THWLFGSsiTo61Ug8sIf4PnnKcoI1VKsPPQhyS8LILkkCeB77x6p6CiAaxWqxL6TAYa6pDoJeqN4IPvzyHE7Dsck2GOLxpVo72FFKHEfsiN53htHNgtcUXuOqkWgYvd90iwz7I56yAJH9iXZWuaZjGUWutkBwMxgVLxBqmtLZMKe8vlb_GXRVyxgxojws9O-sEkfm7gKDxzcOatmNddJaWJaZaSL9u8wmm_w5VKHo20Sftc3oQzkHM8i10-IaYwcbIYy2CJkvZ1j-w7XzdP2o3WBY4QmxJgyOV_aGN4qSs7PTszi3WRDZ2czij0vEDY3RLWHSvRd_wLaujPSQRPEVzhi7-1UvPUpWUcuFV8FTM5Fmx65CwVUiRtwXQ5VimS0ukx0UEIUq9SVjs9awZeyNvs29mCh6h-C4QZvSw_zcQjFZvgr9wklWHjqVwKO3n3CVxK3h5iVtICsd4Lr1UxiHrmiuM6MAIOr3jC_mzk3iNvYiQNOvkK-0oW-sFJCCLp5NlmaLrFO6pczcvOdq5stYsmV-XDGmZKV7RO3sWaxvCfymqBkpCdggcFqqqP67btFFU8rWPD-VK2t_kx-eskA=w400-h300-no){: .img-responsive}  
+   
+1. 「場所の選択」画面に移動したら、  
+   「日本」を選択し、Enterキーを押下します。  
+   押下すると「キーボードが由来する国」画面に移動します。  
+   ![ubuntu_04](https://lh3.googleusercontent.com/5DYWH1fPFV-MTy-eoHCrQ0IOuIz_Dpj_vrycG9K_uxEooBLqAc3V0-rgyR12mrPiQuNaPUiea2skv4PveNqobuwXgZYie_m0lc5UXoLKLX13XhQKyTS5-2JVPrO8fYVLkDrnCTxLIC-sN24FEfoPHs52gjExJ03FwzmDFnqfWQ3YCN6RQ9OrzD9k-0F4w8IILHb6EKioUin0f_sksYSJt5ilFqOG3esw_frIUhtVL14BX7O7T8s76R1Kyy921Pfj8doF-rhvORvsXJ62HhXWI2sSMTr9-5eFhAcwggoG-YO0MXZubtKIHpWsOosWTQypku6q3fhC8H0e3GdRX0rpGmRHLS5aPt1HL_Rdvy4INdsoN5_MZoPH7TAfApqU1oRP_vhPCJh1SuQqsFJybj9J7noGoYlOfCcYkfGBi0LfIAKSNW9aEDhfHMsI7BbLW7qkSGJ-uf4aXQS2XKz6hfD3H8gvvyiFsUv_2ZIqqJthUVkZNml6DGzalNaZtxCPgLwUaF5Os7nwxlmuUFUeYwDNLUo-ZRqqt21iJU_-RVYFJugmWso5xaA_NmlIWrpYuYzw7sVSQILaI5YD9QNr4LBP6gYRNc6O3FFpn1rmcQ5Uj5jgC2l6rbaf90lJgevoWg7xe0_pBuvmqSFapzQaXMlpimdFDMbc_TJpgsDeU7e_FQ=w400-h300-no){: .img-responsive}  
+   
+1. 「キーボードの設定」画面に移動したら、  
+   「Japanese」を選択し、Enterキーを押下します。  
+   押下すると「キーボードのレイアウト」画面に移動します。  
+   ![ubuntu_05](https://lh3.googleusercontent.com/QoTLzAKSeAuOMXExjQQlu6oEXEuKKhGbv2kpfgZwTcqCd35_ASSUb5zrg6eUipcKbg2ZUXEbJh9z3u7cCLGwxj8HMHAl66dYIk3rtFTTwkbAtzFzAxjzOYiu8JZm2DuD-OHLG6p50MvbdDXRhDOSujIWCS6O8aS4tI5Pewr11QgJs4etF60Kaf44KRExRrY7xbint_KKRhcx5d0DNKUPvmJFwiVXT2QcxENq3NdJIGow_ysI57uhQn1yrLZZ5iievgLtvMU7uZY3JeG4E_JbisrzWFgi2LXkcDPqZLf9i6yucmge6Oy2wpe2E5FwK60J2mptGQn7jducTCTAOrpKHUCNdGjilb81g9eoT7F3-MVGg7gUzFP2kH9EP6mHTwH2wk6cAymRyRhr5fi5jzZfYo2Fw53_15-OP0kAf2S5iAJPAI3T26C4h_nt1Kdv2S-HFWgi7Xot3QLOCxPnO2r54FtK80Rwjkdf2VCG6L2KaqqbxHB2P1duXKrL_01nC-omy720Sr4fqIsZf-0xkcr8mOyYMVRsI2w967Iex_sKzbvvaIGiNFw03jLNwfZIqNZdNegtwN4RM3Fxml5Yrqgm2vhW41ZTrfR4BXW9jDmsu8odQ647=w400-h300-no){: .img-responsive}  
+   
+1. 「キーボードのレイアウト」画面に移動したら、  
+   「Japanese -Japanese(OADG 109A)」を選択し、Enterキーを押下します。  
+   押下すると「ネットワークの設定」画面に移動します。  
+   ![ubuntu_06](https://lh3.googleusercontent.com/ry0sESre-6cWUkkhmmnByIMEzAk4BuAbB2S5rUNFKmAs4ge-BFxVQyjXcy8B3LstAbM3TYgB94hzPD9LZXrRTScdIy8x2nRErYk_7KOstG60WUse7RlJrnHe0Z7wM1BnvSMGRBqSRzPvZpDAJpmf98ktN41FW79oq3UQyz8xrvEHyl2wEtvy4lnb_tYSfqHZq6c9jRsdVZNUhIuS2ARfiee3_xn1XB9f3LNzgTXAdWcsvesrU-kHhLbXZvKJcuukX6_08TYYBlE7DVR4P0FYmJjFE_61vR8_fb-UONvUW6Cc1J_yap2cJgvH_Q79WkeoSSmPa4-eShbdFuUGAbvKjPW7CpdR0ferlx31e314EpkSOJ84qOnmSeWeoH9MyEDFjLpLvaHz2pfdw9J6pDk2Ujj4zx-bnbgF6xDGmGENXCjFZY_Bn9YSuexfk9o1jWAq153UpJ0ut6TydurKgZTw_xT-4_uMcAQ6n171coibITjzG6HAt-pkNJb12iNVByFpcGp7-8dBxFkIYb1kkfV7d-AhKHx5hWyCjeizHcS7_chWUDZUKUUHcJTWJq5PHI6S9Z9693VBT3RIl10AX8cj4yeXk75aSCHmsEe5k2-WYCRhusbVpRD_7UXygLdM7aAoQEsQ87PIU7L2G2bs3n3BH1pEDgQbJdM3bUrJTOBY6w=w400-h300-no){: .img-responsive}  
+   
+1. 「ネットワークの設定」画面に移動したら、  
+   ホスト名を入力して（ここでは、ホスト名を「ubuntu」としています。）、  
+   「続ける」を選択し、Enterキーを押下します。  
+   押下すると「新しいユーザの本名（フルネーム）」画面に移動します。  
+   ![ubuntu_07](https://lh3.googleusercontent.com/s-kcdQLMEFFPXXicBVT3S652dPKGmmOux1cSHsczsiZn9XVtNMKWofYTCEUPtgWEx0okQtpWy6JLtftz4hVf_JhlgL4sEEQGGwVrjlAqyl7CerlRvL9tAgPnJBS9B59i7DWxIhEQpf44gnBIrFd3Vbtl1xjr-wzhpuQiQbpC6p_3tpyDk5IX773YLgBg3IeHjXGwfGJD2ZXqsFsr1rRq21qpVShchcZAuvKheFdQLExk9_gF09pCuHadXqEzKVfcDJnpNVPiJEYd59ppbGhIht4VIxnVkIOnG1_s5tx2iQtFiRapxOmhSAqGv8Bw3Zz3IEBITCec_Bku5GwnKP4U6W2nAdBJupOtJkt9shaGusT6e2Rpm104G_Dhaa2jpzAjSv7IAAxUmxtdYfvsS80ftm-hXoeUIfCFKHf2ZoDpcMJQEoh5FEABgOWA0fhYPb9v4Sqw5tAYVC6hb2VA8jI4kfPgaj_WBZ9Jw8aLpHRKlCLuVPgUnafrxB3DmTTXuV5b4bntrbD84ZzwLYp8OB9b9yGCQePPFyS-Tz8sEnx6wKGqxL7f8NihGu3e6w9Tp6bl9RDLbqe90akYONIOyF0pEkpQALzRj952MW5sG74yK3e4i5aOrf9z82cHzKB7Djlnbk3OUtfO6Z6Thlk7MjFI5shRvBlLyI8dknVKzCGyvw=w400-h300-no){: .img-responsive}  
+   
+1. 「新しいユーザの本名（フルネーム）」の画面に移動したら、  
+   自分の名前を入力して（ここでは、自分の名前を「username」としています。）、  
+   「続ける」を選択し、Enterキーを押下します。  
+   押下すると「あなたのアカウントのユーザ名」画面に移動します。  
+   ![ubuntu_08](https://lh3.googleusercontent.com/vLGV1lDIGk4KneXNGdODbBifi2Kq95hsxfV-4cIdhJLlk1cLMBX7cRz3s-pxoIbD6Dl872ZI27K97yCi6-8epvbH-FmIrJZPIxSoRIdXzzYKiUhM1RuZHd4EkxT4tfylRDkx4X1h_Fv4vq_j5sICBMo2JKB_bqoHyL-hEfd5clMCK66yZhbnFB3KdV1KSl-cjmH-pI9_kdHy3t1Qlj5wDhddH0pWMZ5HotoUC0RCL4te3FsUxpsn0-KdbKUXKghVi5xCn6a0GDu6qdpbDiiuVL0JrHw2G01NW4dwiQQuEis0dVl2SErC6jKIXyCqs54V8nUadkGQELlhzsnCVO0ZPb_ieu-tQeHLqh6B7OqYwbg7Sb6J5-n1x4hRvPuIrfi8M833qrDaqIpnU4mkUK5Z2X5VCAhuIePjgbfhvVuGV7L9jZL_7EjH4Hr0Y7KHu9J8zBhsyufnobXawjoPeMQ3qteRzzcq0MDIragJXsClquydqf7YS_wAxEJGrkLpDbnpXe6GVnk_Fdgp0jiXK8YNPC_nHD150qtWCZ4BSDvUMyMKOZwx_uYhXskUD9cojLVxYv2BFjqPxD0XP9jwVl_MhXuyjX5C0yWCsR6A73k8Xh8qF1EKoySrU3AfY8VYNzonOitJeHwgOT4UZLYaQMEEvQHasDgZ4mykWT9_D09Nqg=w400-h300-no){: .img-responsive}  
+   
+1. 「あなたのアカウントのユーザ名」画面に移動したら、  
+   アカウントユーザ名を入力して  
+   （ここでは、アカウントユーザ名を「username」としています。）、  
+   「続ける」を選択し、Enterキーを押下します。  
+   押下すると「新しいユーザのパスワードを選んでください」画面に移動します。  
+   ![ubuntu_09](https://lh3.googleusercontent.com/HD1Q5WdTfloM3bO1yLVeH26ExaJoiApmyFy_Wwyt87gtsxV-6mb33vYQ9CYEGsDHoHK-lVmTj2AOA-PvitqvDx-wig3-Bbi08ruQeaYaewyLsHxpc1-OC3TgUZsB9N9UxmCe1OKNmtthRyWxwzVNXQGYpMJEfAAX2vV9lVzNA0uxjOKf0tLQt7IGWjrAGVwxvRz08Us4T2GLW30gtTyHhdosnlOnXb8F-mupcy2SkMRPEZMoTUpmP6BXu9u5mGTiybh3UiJDCWY6o1XiqHfYZnrsbO5-q1m6-8TgvvoeYXyFOLCU4k_EasuHNQeXWs1Pj1iyzXCxAPDhl83a7H8j6COxvUpS5Dt8BKPyB-XbFTea2QJL8t5RWpqKywn5zGyrqM5y0qiCe53jD4hc8OjdCeeSSzNj4SA-cthTrsw--zpIH3S650N0cmL8ql2HVTLXJhEHVUv7uvi4fRIVHOcmbmbSGCS4nVuWuJdxORx_FYz3bJpRGcfep2eE790QUjCqpdZCbNuZEA5lT9fxucyTtIOQG3WVkLvfULPDs8kktdaaS16HuOrsNFnlJlaOr_e4Bw7be4tgmjTTkmHCAyIWAGO3pUUszovmg263BOcPI7xAWjot=w400-h300-no){: .img-responsive}  
+   
+1. 「新しいユーザのパスワードを選んでください」画面に移動したら、  
+   パスワードを入力して、「続ける」を選択し、Enterキーを押下します。  
+   押下すると「確認のため、再度パスワードを入力してください」画面に移動します。  
+   ![ubuntu_10](https://lh3.googleusercontent.com/qC3Lg5UAbeqXBgvtty6GXIzz7LCUeYqIJyzFoZuFFAQ6QTiOmEnnX1b_bONm3MjSp3JHSMFd50QFCrQ48SyPW_tsJj4VbK2-AZ1-qs9eKzToOftqmZVVHMJWmZLZGwdYEqFwlOEl_DtVrFL69oXk_f6VJ1PIcAxDkDtH00pW3wka3xAOEdaTwDWkuOgJMMjpc17_Lq9Wql21-gdhfGJ-UwJR1O4DEwl3Oeu7pWkZqv3bJrap63PkGynGtajCsghHdKGhy-B039IirSlEhhiSEHJ4LXEWoIC3gFhW-7aZSjdt8bgM7vGjbJSBHLtsidZTSiuMOwrpA3YLhkRq0AqC0BxmQQ-Ppt0U5geyUeydyGbAOtypFa2a_fwbeyO7T2qbokvyVosTFzXbWPz-Zuc_DMIt0o4ClVjfVM_itwjE69XdfyU3_XmTBCEBEWEy51N2_P2nA7TPOz1jPa2rAujn92td8LXbUITBJLT62bWVnEtiDaBeD9oHgYxipNNVE8I8uUnxukwPOqmyd3rlt2XCx8dZvwJwqDwprj5ok0IKkrwR0lUwiaaT-Pt-HPom9-5YxYjgpFD5BUeWSp506YS_TqkOhSJjdwMeX_c-xBHkczyd-nBp=w400-h300-no){: .img-responsive}  
+   
+1. 「確認のため、再度パスワードを入力してください」画面に移動したら、  
+   再度パスワードを入力して、「続ける」を選択し、Enterキーを押下します。  
+   押下すると「ホームディレクトリを暗号化しますか？」画面に移動します。  
+   ![ubuntu_11](https://lh3.googleusercontent.com/HaaTwHoeBFP86cq1q1w5_a2brASxDz7SG9J0G69koZBV6ps1tzz6b4xLmDtdLPJzQfBK-dxCiiKDlS1apS3pQ_fOweIxJTbNA_HU3zxVdHe78UyokorIWo-GqE5V9cJNFGmKTtKSRKdfCA93a-mDzqSBskY5w6OliLa72D5Ej8-emEotUOYYLgfeADV-s4g6FUnE5m2WYcS0wNBAUGwQ67Qbg2KgmNvMzFWu9O2UJimMmAToDgPe5za1nHjMUoof6ObKZXAQaWthI7WmyG94r--T2wZSYHTN2Fm_m2EDo5kRN6giDshW1hvPEcnsB5UNxeUOEVYyXjN2TaS6j7amYQM3lYyUKmLjVf6tGy0AdZVdTp3n26Mz02w2XBAlBfmpNf7P0GkFwPcPZvoPvFDFWiejx1nTPyIVDYArj16t37YfU7C1RPvTQxwz0opFx3HS0OeJ5I6oviUkS158jc-Mzby7xs7t-99429tqldH7mLzPfL46CsjmW34V0_RcJW0r90Kytzulf7V4QKu_Ivtvw9okhVmPwmKNW6h5TWzsr5AOSCasvQtH3W6UJwEnbq4gxsE31nbjLdxoEE_KHprqOrpop2kOb-oeEf_wWVHaq4GGTpxE=w400-h300-no){: .img-responsive}  
+   
+1. 「ホームディレクトリを暗号化しますか？」画面に移動したら、  
+   「いいえ」を選択し、Enterキーを押下します。  
+   押下すると「時間の設定」画面に移動します。  
+   ![ubuntu_12](https://lh3.googleusercontent.com/Rn93gii9zHHE_wiQplZIoN-ZZCAM-nB8sG9S0o7QL2NOaObDxCkPqa2CSuSn_uKcskFa8aLpDl5dIUb7XclB1kdF5aJx6ncpIIq7js3vxL9HG3KPMxqz-0pbJgZVqhhWH1lAci8d4x1KooqhQE-8_w9TC9HU0-L1Mu_qdoEEfGCv640zGuRFqQk6tA46c4PCMbXGlBRPZ4B3fAmMP3prrAvB_mpW7ejPeFN4SzPyPzs2f-X3nlSDyuccMmMgptH6bZeAi1GNZCQuNOSM_bqQwugbamoB4uMNAptVVtzVEfHZYJ5S4_SdGY17HsNfGl3jK54lUgTXJ6_OPotY-reQ6yytBnfRwdOQ7KJ7kHTUiRKvaD3Pjmf8C2X43uojh_MjuUqDrfImSRrIcBgooqw60sCMrVvQv_CGel_lpSIkAfIorZHseSEFl_EVErq9WYiBuKHnVj904GpcTS7r2egWxhSXEih4nz-Z5LHGj_WNtYSY8Qu2vdvGL3s0dOX6anStgdiTW-O3EB89u4WG0PibRgFlztxw5TjwYz4wBivykHqqPVfEO2Ke6gtasI1WJjk-WMpEVRV7f5ofp8v0tTx0ioAvvR6F80KD68SgRQB8-xwmu8dn7SB4qmECbLyIWCQz-dUHLyyOgSMoM4_RwGRrfv4iNxA_b6vd8K-W4Q5o0A=w400-h300-no){: .img-responsive}  
+   
+1. 「時間の設定」画面に移動したら、  
+   「your time zone is Asia/Tokyo」と表示されているのを確認し、  
+   「はい」を選択し、Enterキーを押下します。  
+   押下すると「ディスクのパーティショニング」画面に移動します。  
+   ![ubuntu_13](https://lh3.googleusercontent.com/3JiqegWy6dk1ANICIwNvArWaaf19ZURz5tEcFCRX1mPPUmYXitzAH5Iezj_XIF68bayS5Waso-wrqOKb4V5gIo0toCyHX-WLi5lp-3LkwpTI4uJ6Hh6hd_uQZdiqt5cEOy0Hc4JjmLnI0l43dWP-TSNBxCBm80Am64lOz3LLkDYWBT1yB4313vSHrYYZf7VoUX8ASMbJT06rvI0hDUVR65D9ZKQLrfOq9gF-uiO9BAGwj26nSXd_-a3KMuQ0ZAfe6GfUcqGyclaOFrs5Jy7OCjF-IMKkATr9-_peNqiNyr_DHwxw7cTzf3C3svVJfhqy3eIw63kOWYKCHJC9xu8D8B3R7fF4a4nkuQZWFswVhxoAo3Jh9HwiZaxEpTcubC4tJktyheN0i8iLjrA51NzceoIZEtpi1na_aBaDXqYNvyJk0-70ZfTpEIzRCZPhP9_i9LLz6Km4dJrj5zkdvS7aFFjMC_-X8dOhaJsbrsoJyJE2ni2q_XUNjmmBYfl3x5NclM8OGWVT8G-UC8fxtj-zzRzuIzGSppWQcsrzrEcA7xoVLU665IJi-bWsBZ4NoGKuAV6im0wrwQlgkO1Fys-_HwQrtWgQI4iuEsHRNC9obIzGhrfgcQuWcTwNNNNxrc34IMVUGqKHdFtdo36AtKOTAqpCV4LQ_47WKKmfG9LssA=w400-h300-no){: .img-responsive}  
+   
+1. 「ディスクのパーティショニング」画面に移動したら、  
+   「ガイド-ディスク全体を使い、LVMをセットアップする」を選択し、  
+   Enterキーを押下します。  
+   押下すると「パーティショニングするディスクの選択」画面に移動します。  
+   ![ubuntu_14](https://lh3.googleusercontent.com/cFce6lg2v_PmzKXuf8CjRC0W9fDsrY_mlWZ377jRwai6zToZYX-PqPyL3EYUKZzZUfqGK346Za5dueH7VVnYSbkWZukCZ4VE8BSb9xPu233Wuib-0_W-ofSAjdMOV3zaK_IQtCmkEG5RxwBWPnR1D7oHNeo-yqXgb6AFMlFfZ8t2TrMgo_L40YTyR4f19A1FmjxzI7aVvh4caSrIV85OAFH3DQqUKe6UvIk7ABY3BqP9j4c_CHMN31UQPaylgCb-aGvr4o73DoOyyHxnCnTtrOM7Rlyi9KDc3XpZu-Tud2AymoaYO1xXDZrqd7Gi0iL6HWJbmHbhOY3CaROt-AICtQq6kMhk6CMF6Wb0MMt_v7XWEwY1u3OoOdWR2PhBysIYccIFeeLEKJJYdpr9EHndt5bUw1CLfh71qqOWfrGBS4bDTqMJctIvJvSEfvpKCW2eYlwt5lJHG7eK3F4PxzFCYaKcmttsU6v8xUDkFG9whDfcNdWd_L2VUzuFN_3QgaPNAXajm0AzUhOOprpderJxpf6b_vYjBdhroC45HNOxJAfXrSCSmY35vS73L6Mh2gS6fN4_pkdSIVuKQ6-fZw-u5qTydgxbBAoO7HG8kM7_jM6WpKGsI8Yditwks6qnv-iltk4I_HZ2K_w1kDCVH1i1gXUsiLqIjS7bliTKKlI26w=w400-h300-no){: .img-responsive}  
+   
+1. 「パーティショニングするディスクの選択」画面に移動したら、  
+   表示されているディスクを選択し、   
+   （環境によってここは異なってくるはずです。）  
+   Enterキーを押下します。  
+   押下すると「ディスクの変更を書き込み、LVMを設定しますか？」画面に移動します。  
+   ![ubuntu_15](https://lh3.googleusercontent.com/K9QqRW9OM2APazC-AGThLDuAFoZzMBmomtlboxwMNd7IsCN1BLxLL6_ww7MBfA4JWa0hCDgKq4jvO5x0Oy8aKu53MDXQ5WeUhwanBQQSa1J-7hwuHhfSAR9Zz9O1G2jypPxrh52pGKXvnj6QQBVoeyatAGHpyXURI1YtEOgE-jpF0mUL9tzpX5Vcxv7Jorigw_FYYW3zmodg8RkbPzEg4Npc1H-14sb7ohG6IHXNZlLdPmgM1aNeNRb6Br1RHU9fDdWUEwAnLH-pkk2-38Sx1u2fnfaAsk10T0mdXsPikeLKmRaPMj9mqwV8uFrCdF1xiz_angrSA1Qk8-raq6NTjqYPkap6-LOWQwiEpVLcrRDB-pQNRTmnoGomtm-WGZNAsDDPfk6lDc4uD-EJB6ENj8JRGVqewEoPuUV98i9VO3HHreLnpC2AFuHRlbX2eIRjOY-bYSUYTHD299wewzE1oMIhKwmZS-10V-9tEOl8nz1Isi2nY6bMEQN9ciI5ua0OwFblYdNbinlihyeOiBQIoJ6rbr-bjaTPgodr8yxjbVKzoOiK6Uupk15IIbaKn1Sb5EpzXpO8QONzqYtyRQAM8cUJm--7FdsqKgF6Cm-ewRH8WrVv=w400-h300-no){: .img-responsive}  
+   
+1. 「ディスクの変更を書き込み、LVMを設定しますか？」画面に移動したら、  
+   「はい」を選択し、Enterキーを押下します。  
+   押下すると「ガイドによるパーティショニングを利用するボリューム」画面へ移動します。  
+   ![ubuntu_16](https://lh3.googleusercontent.com/q1TUVZ0rmvmCk6vwwEGOxvnf91YyjZ7SHp8We7MVXfUbXfB-m7C64vWis0kA72uiggK4lNiHHGfqSRVNt0L0I8kuhPW02l_YJQzhXM4_s2KZgtXL0cfvZwDFouEJTe8fmNuPXOhhVAHFaz1ovHoi9cQoEARW7uX-83TQLMZZOwCFGy5bNWw5tRHOg5Ak189KHA2qTBvcC-zl_tsN1wGn4x1qrpkmrkr0m2zYJKx0Fsy0NtCu1tW727G59tc3PgzFSEciIl_qXuk3LrmzaIEFlzVacubrxHnJ6VtngRaDiZJMnopXBrESep1BtnR4jADipo3aEHc_5K7sRV2BnX2gavPKR1U_UkNGhW3umLLrlqxbqk4M78HbcAZdDSqHQzJfDDX3zzltIo8rURFRFuq48d5WfEvq1VJJW7V4j4aViL-4WRyPZHkoeiKAqHtOX7GzGX76u_zOSanPMjs2_AXpLOY4326rCIQanJTHacUkWfn5aSXMshZ0grLs-VjTB9U9pPnHsVBK-70wL2q9iAlYFwN7TSKWMbQuPrzlfaCxfuaHFObpdyHu1tYEy3XEmWqvgN4b1Ro7qbuoI73QmLAcLkdD3CY8g6crO6ffdc8LuBYN4_Vu=w400-h300-no){: .img-responsive}  
+   
+1. 「ガイドによるパーティショニングを利用するボリューム」画面へ移動したら、  
+   「続ける」を選択し、Enterキーを押下します。  
+   押下すると「ディスクに変更を書き込みますか？」画面に移動します。  
+   ![ubuntu_17](https://lh3.googleusercontent.com/bp1lmtDRecUv-qoBRIDTxzUpG47J3zDI5xb43jcW1SOcodvXqvGgxlQxHw0d6P4IhaQLPvFZ_iMtxndXjMa1Gbn8V9vELjA99kNCSkPxYrx0kWMK94-AupZw8udbdIrmb4PLLs8caBlEVLrE4TiEQ43GHQGBzokWpXygm5DygIqJ8H9k0dA4cdN-Gwoi8Hh5BeMErTN7ht8sVgj8S63xb06kMqFGiD4lEyXqFGiOmF30cLLzReTVyWXwye6pu1o8t_Z6pGH7OfKN2D_8l4c4pefMBu-gUNNIxJtmjTb_0kJXksOmzb8MvVP50O2zv4gOyiPRdW1xEgzWyTcVygXoo5ME6wlQ7YBFMI-wQfTv6dZolhvolc2_gCa9xCYDoTkoLJh2wnUi4v4mCkgwKfiBzviQdtegBPKDkBIDq--AxqTn2aVZU2BEWtbLMQTdCbhrtsHWRI3VnzQzVI4sMnz5LDZefiJEx4IMACS3AJU09jebXj4mhwv3pOr9vmBZo5S21Qr7knw4SUdN0t766e8039mtk359K6tCsKL3WmBYs-AsPV_p8_ezQjE_yt-oYLbnoIIdvk-LA6qZYnuh8sF8_MQUnD0FAtvX4l_P2TSnA-6Ttpzj=w400-h300-no){: .img-responsive}  
+   
+1. 「ディスクに変更を書き込みますか？」画面へ移動したら、  
+   「はい」を選択し、Enterキーを押下します。  
+   押下すると基本パッケージのインストールが開始され、  
+   最終的に「HTTP プロキシの情報（なければ空）」画面に移動します。  
+   ![ubuntu_18](https://lh3.googleusercontent.com/q1TUVZ0rmvmCk6vwwEGOxvnf91YyjZ7SHp8We7MVXfUbXfB-m7C64vWis0kA72uiggK4lNiHHGfqSRVNt0L0I8kuhPW02l_YJQzhXM4_s2KZgtXL0cfvZwDFouEJTe8fmNuPXOhhVAHFaz1ovHoi9cQoEARW7uX-83TQLMZZOwCFGy5bNWw5tRHOg5Ak189KHA2qTBvcC-zl_tsN1wGn4x1qrpkmrkr0m2zYJKx0Fsy0NtCu1tW727G59tc3PgzFSEciIl_qXuk3LrmzaIEFlzVacubrxHnJ6VtngRaDiZJMnopXBrESep1BtnR4jADipo3aEHc_5K7sRV2BnX2gavPKR1U_UkNGhW3umLLrlqxbqk4M78HbcAZdDSqHQzJfDDX3zzltIo8rURFRFuq48d5WfEvq1VJJW7V4j4aViL-4WRyPZHkoeiKAqHtOX7GzGX76u_zOSanPMjs2_AXpLOY4326rCIQanJTHacUkWfn5aSXMshZ0grLs-VjTB9U9pPnHsVBK-70wL2q9iAlYFwN7TSKWMbQuPrzlfaCxfuaHFObpdyHu1tYEy3XEmWqvgN4b1Ro7qbuoI73QmLAcLkdD3CY8g6crO6ffdc8LuBYN4_Vu=w400-h300-no){: .img-responsive} 
+   
+1. 「HTTP プロキシの情報（なければ空）」画面に移動したら、  
+   何も入力せずに「続ける」を選択し、  
+   (インターネット接続にプロキシを経由している環境では、ここに情報を入力しましょう。)    
+   Enterキーを押下します。  
+   押下すると「このシステムのアップグレードをどのように管理しますか？」画面へ移動します。  
+   ![ubuntu_19](https://lh3.googleusercontent.com/IQI7ybx2ydUhNR7bkptxfieWY-q0kKgxKKo5IQ6XOwCiDQse91agiX1z-PZNbdImg3DuuX5aUw4hovDc3Br9AxCLz8dpwleBDaYN_C77BeMqUvsYq5JtD8u2WYxPDj7b8t4eJo1ENkoJ1uS61fx59iFLilwSXQfIKsXWR5yl7nCkWuG11A720itYqP4KckVBxlgPRC0N1zKXu_Ls7JL3oSGdq7t9wL5zyfTGWjpzd0pR6zwJ8ddt_x2Nmb_h_zywy9nXiyPrC7hrsltTu8oRxGpJ9AQUyjPVLnqh8AbqgVfihpvrTqi2b0PaIa2RDRo9rvry7wpgSZWlQJMJ1MMEWNZBOsT6_FFKdjAT19VYKtgAc68uhU5KM2R7GfAChmHHD3MSpwB6_98l31UhUfJnmDTjLit5fAjNZarOuqVn1qeQkjok31daRasVMrUk30M_XmYmE9TCaPTNhn_yhycTzjzbCUZfe-M6vt_1dYZTWf_t5EKoiD8-533M0t_oFgfFUUp4fOolOUooq1OSBHSRLWg0mmFqaCTIydWjf-J_AnH_2ebmy6b_uSwBQBYRP-54OGORIKUNBG2hc1adOYu88Wu1G60O7JbXNEi9DuW_VKrvO4PVrmNuZibT-uRjv-OTo-H9cYo0xveZIglhlNkzfBryAYh9t-KmckswaFwUbA=w400-h300-no){: .img-responsive} 
+   
+1. 「このシステムのアップグレードをどのように管理しますか？」画面へ移動したら、  
+   「自動的にアップデートしない」を選択し、  
+   (「セキュリティアップデートを自動的にインストールする」を選んでもいいでしょう。)  
+   Enterキーを押下します。  
+   押下すると「ソフトウェアの選択」画面へ移動します。  
+   ![ubuntu_20](https://lh3.googleusercontent.com/aQJwNghyPDWRDFD62lCdhTqEmWz4q_yiUlaBXbO0T27OyEHyQPaTJdYM-pkdcp_bmUom7hZXXVXFyeydPOt5EhtQ3lC80BfqyNJAkRr2Y20iYl_jlGQ7pLpDek5EJqShPbfFSi7777W6ZR2FoEcdsY12GKZZxiOONj26JAHlCYPXE6gX__zvVUgLY4scdxaRmbvf00jFKiLTQm30wwqDc5rLy79PDoRzCHpqH8WJT8BY3eXTdZ7kyeSICHmVXNffi5XBMqZfebkMkes1NcsIhrP7so_9jC-GtaoMvjN9sUDCH4_TtpDOEmWP46fX72eJkRLEKoLWO_I0BKu_F1wxAEDw6z4ISCctLILQXf7Kc2HZAgDrWEzugAk3LmxjUe3GjD59hrs7kOP3yiFpsl6lwwpd87i-wJmqH9BzIhmaa6GH2CRor3x1H33AfyFa7m28S-g1l64rRj8Qh4-6mju2TNKri2ER6jpj9HOMWDmQHA8D2VIEgoceY-ZTIWXz-ZCZW-L5CKfFMIoficsbJK0ovHQkSLpPVD91Nm0RcbnPQWvn471rsCHryehCfUYdZNBWsT7t5jOWK9Byvgg8R8wnWtf4yKKtZicgYODdedQmsWrtCsGAmHOd=w400-h300-no){: .img-responsive} 
+   
+1. 「ソフトウェアの選択」画面へ移動したら、  
+   インストールするソフトウェアを選択します。  
+   開発サーバーとして使用する予定なので、  
+   「standard system utilities」が選択されている事を確認して、  
+   「OpenSSH server」を選択し、  
+   「続ける」へ移動してEnterキーを押下します。  
+   押下すると「ハードディスクへのGRUBブードローダのインストール」画面へ移動します。  
+   ![ubuntu_21](https://lh3.googleusercontent.com/Gx2DU-x885_mXrLzRXSylHtAoSJut032lNmURefRWggdJN-hp-R2UWwGx-rFhfRFIwW1uN7KWCZJpzthZnnJIO9Emk1HcNgz4Fb6MjwNkB66PwH7uvMuhYYAofB51UbrClOPHVE_ErQ5t4UqTaZ_Eo0nFeYmMBAijDvOgFc4yfGkST1qWabet5m4LELfPQfyMJvAZuKdMnStpmmK7xltEs-UQdWpVwBdTA6Cmvh595OVyTbTcqlRM9SgGtFqt_UH7Uv2zhstZj2Yr67iVNPi17KhkxGSjIkafHQ100RiHkgz50_B75IqcNlu-duHfNGUn8AQJjb861Gg5YVLCDOUHvo3ASCIeTITiM53lgDg1YY1N0dzKrkwWWMoeR_TF1TwrNH8wfavp68vXCcfl4fE9_QXodhB0vY3ewyXAFeqdUlRnDw9IUwbhYPF9_pqd7CkwPPRM4k0T2rSTjkxzeFgwqmofKopni1Y3Sk8pPkY0eCtbygdhxfQyPkwi8lluBiXRJ43-lF_7N2vnvdXS36vgWuCeFbqHp09YzIxSqYqHWM0huroetzw7CYEh7Bj93SnTiaeC0EHtQjo2yZ9-F3hNulFZpNKbvG6yh8aRJmlV_rP5sKF=w400-h300-no){: .img-responsive} 
+   
+1. 「ハードディスクへのGRUBブードローダのインストール」画面へ移動したら、  
+   「はい」を選択し、Enterキーを押下します。  
+   押下すると「インストールの完了」画面に移動します。  
+   ![ubuntu_22](https://lh3.googleusercontent.com/775QqPhWZg8uSDFbMT_xl9cQ1mlxKF1w9o80c9uevWTurQHVnua2M-OOzohtgUiIMw9Xtw8aH5gT_KraPEa9jAs3lOxphr5iHR3vB66ju0z_akqr-cPdDqRXxRZAfAMbF9xm5C1T6hpyPHbPtGV3WgT-MhHO0HBFztoc3ZNC2-BcuLjbvetgUIGyGAnlbxwapWlvpt-Tc_KHwlVttckROyENgaiYjNaEDWDlK2WF_F324hLdQXPbkKJmzsc-_OuNpiQJP775oiqHHdjdmfsWvEgkML__i8eQitEKz9GdMQghk2LcDh432onl-2lcOXWQiVXgg0b-gdNCofAFXzWjnERvrraojMdye-KLNAEy8YsSVLu5tjPByuO395PfqsEq9NwiUxl7lzLSd_aPVodQs79YjqC4HNXBH1z6PdK0EO1uywLY9hcO9zhzN9Eu5rIEROzR-V9HRPWGd2EwiYQXY95J4VnwNF5-i8OHSD2h09kckKqP0hZXPxAZazIa273sDXJeG043-2lxTjRFkPhFle43_kSgu8RKzFsNMwcKAUv5OcB8Mmdk2a3cYFYu0kcM_XWsbXkV9FNZFp9vZGWXyGuqzXLdNIYkBRdcUPK80i8qL0vlyz3Bn8bq2WxGQkfELURiSHEkfWwjzElHtJqEX8f4ofGs7dJyuWaddAu3rQ=w400-h300-no){: .img-responsive} 
+   
+1. 「インストールの完了」画面に移動したら、  
+   「続ける」を選択し、  
+   Enterキーを押下します。  
+   押下すると再起動されインストールが完了します。  
+   ![ubuntu_23](https://lh3.googleusercontent.com/tjUC4Pl6ZK2fyTboCxXwdLU1vACa-6HYaxRR1DszcyRqQnHM2pjiszMXc-dlRi3qs3xHnzZzxYMGMPAXwdozCbNngI8ZbPC8xr3aN7KlkxY4SVZhYULbe4DX93c3oxQvVdKdwTbjsyc-RXERO1V7gJut9FGOGrFz8bLZV0I0pFNsiJ9oM3b5fBobAQwZ1tePxKSjOAZqjqLs_s3AhCl1y_rf-1Ga1ZcdRXcsqS454xHkkbaSVgEQ4UbJUeea9yf8YOvcpdX82pVs-mVnVojJhiPiaZ_GPR1jb28iWbcaHjmifDtOfgIV9zxZ390JiCuUjc6py_dTjB6bgnTlOei_l8MBOolK7hDwpWTfsY2qJF7igIPies25XguOJBIF8wISCr1fi-HquNgsTIyMJg_vmS24jo96sjmZVqp-DLL1PKns90PO_bPhCfbprAzi1BylGV3_IEhwk_e_nvoIVGn8kdi1vxwWx1ZOIF_yhFmqdlJ1bhjM7jvcUVbN4QiIKAzYggkC7fn8jB7rUvQGI-qDRf3I6YqTkpGL-7G4QtpflwLf166FAYFnfk2pzhr9N7XdpZxPIF_EA2d76TLtV9Ibo6dR59nONJXWRBQ-XnOfxdSafY4cPaq9YS7bmYbcSmvmxxkb6Ufl07Ps3-KzF2Xy3hN0-cD3YLVMT0jy6JN2uA=w400-h300-no){: .img-responsive} 
+   
+以上です。  
+
+過去の同様の記事  
+[Ubuntu Server 16.10 インストールログ](/blog/2016/10/20/install-log-ubuntu-server-1610.html)  
+[Ubuntu Server 16.04 インストールログ](/blog/2016/04/24/install-log-ubuntu-server-1604.html)  
+[Ubuntu Server 15.10 インストールログ](/blog/2015/10/27/ubuntu-install-log.html)  
+[Ubuntu Server 15.04 インストールログ : まそおぶろぐ](http://masoojp.blogspot.jp/2015/06/ubuntu-server-1504.html)  
+[Ubuntu Server 14.04 インストールログ : まそおぶろぐ](http://masoojp.blogspot.jp/2014/06/ubuntu-server-1404.html)  
+[Ubuntu Server 13.10 インストールログ : まそおぶろぐ](http://masoojp.blogspot.jp/2014/03/ubuntu-server-1310.html)  
+[Ubuntu Server 13.04 インストールログ : まそおぶろぐ](http://masoojp.blogspot.jp/2013/05/ubuntu-server-1304.html)  
+[Ubuntu Server 12.10 インストールログ : まそおぶろぐ](http://masoojp.blogspot.jp/2013/01/ubuntu-server-1210.html)  
+[Ubuntu Server 10.04 インストールログ : まそおぶろぐ](http://masoojp.blogspot.jp/2012/01/ubuntu-1004.html)  
