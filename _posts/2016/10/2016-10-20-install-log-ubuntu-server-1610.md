@@ -15,8 +15,7 @@ Ubuntu Server 16.10 をインストールした場合の備忘録です。
 Qiita 上の 「[Ubuntu Server インストールログ](http://qiita.com/masoo/items/307f49d0606cabb90f93)」
 という記事でリンクをまとめています。  
 また、次のバージョンのインストールログは 「[Ubuntu Server 17.04 インストールログ](/blog/2017/04/15/install-log-ubuntu-server-1704.html)」
-にて、  
-当ブログに掲載しています。
+に掲載しています。
 
 <br><br>
 
