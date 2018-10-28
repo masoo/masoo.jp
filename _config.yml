@@ -17,7 +17,7 @@ paginate_path: "/blog/:num/"
 exclude: ["_sources", "README.md", "Dockerfile"]
 
 # sitemap.xml
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
