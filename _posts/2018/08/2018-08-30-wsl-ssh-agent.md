@@ -41,12 +41,26 @@ Ubuntu 18.04 の bash では、 ~/.local/bin が優先となるような PATH �
 zsh の場合は、 ~/.zprofile を作って同様のことをしましょう。
 
 ```
-$ mkdir ~/work
-$ cd ~/work
-$ wget http://mirrors.kernel.org/ubuntu/pool/main/o/openssh/openssh-client_7.2p2-4ubuntu2.4_amd64.deb
-$ dpkg -x openssh-client_7.2p2-4ubuntu2.4_amd64.deb ~/work
-$ cp usr/bin/ssh-agent ~/.local/bin
+$ mkdir -p ~/.local/bin
+$ mkdir ~/works
+$ cd ~/works
+$ mkdir binary
+$ wget http://mirrors.kernel.org/ubuntu/pool/main/o/openssh/openssh-client_7.2p2-4ubuntu2.6_amd64.deb
+$ dpkg -x openssh-client_7.2p2-4ubuntu2.6_amd64.deb ~/works/binary
+$ cp binary/usr/bin/ssh-agent ~/.local/bin
 ```
 
 これで、 ~/.local/bin に入っている ssh-agent が優先されて、  
 ssh-agent が動きます。
+
+<br>
+---
+
+### 追記（2019/1/22）
+
+以前バイナリのファイル名が   
+`openssh-client_7.2p2-4ubuntu2.4_amd64.deb`   
+でしたが、   
+`openssh-client_7.2p2-4ubuntu2.6_amd64.deb`   
+に変更されていました。
+今後も変更されるかと思います。
